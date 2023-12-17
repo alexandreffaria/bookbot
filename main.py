@@ -13,11 +13,12 @@ def countLetters(text):
     return countingDict
 
 frankenstein = "books/frankenstein.txt"
+christmasCarol = "books/AChristmasCarolinProseBeingaGhostStoryofChristmas.txt"
 
-with open(frankenstein) as f:
+with open(christmasCarol) as f:
     text = f.read()
     
-    print(f"\n| Reporting on {frankenstein} |\n")
+    print(f"\n| Reporting on {christmasCarol} |\n")
     print(f"| {countWords(text)} words were found in the document.\n")
 
     letters = countLetters(text)
